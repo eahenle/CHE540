@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.17.3
+# v0.17.5
 
 using Markdown
 using InteractiveUtils
@@ -75,7 +75,7 @@ begin
 	# system graph
 	reactor_graph = ReactorGraph(FluidizedCSTR, PBR)
 	
-	#gplot(reactor_graph)
+	gplot(reactor_graph)
 end
 
 # ╔═╡ ab54c6d5-dfcd-416d-9a3e-ee32a27ca8b2
@@ -103,7 +103,7 @@ Optim = "~1.6.0"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.7.0"
+julia_version = "1.7.1"
 manifest_format = "2.0"
 
 [[deps.ArgTools]]
