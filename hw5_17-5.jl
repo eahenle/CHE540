@@ -71,9 +71,12 @@ md"**(b)** What is the variance $\sigma^2$?"
 begin
 	x̄ = sum(Cₜ) / length(Cₜ)
 	σ² = sum((xᵢ - x̄)^2 for xᵢ in Cₜ) / (length(Cₜ) - 1)
-
-	round(σ², digits=1)
 end
+
+# ╔═╡ 01ca9577-f336-48ff-b514-ea1074b71e76
+md"
+ $\sigma^2=$ $(Int(round(σ², digits=0)))
+"
 
 # ╔═╡ 83be9497-4f5d-4018-9e6e-0366a0007ba4
 md"**(c)** What conversion is expected in an ideal reactor with $\tau=t_m$?"
@@ -155,7 +158,7 @@ begin
 md"
 $X_A=X(10)*E(10)+X(30)*E(30)$
 
-$(round(X(10) * E(10) + X(30) * E(30), digits=2))
+ $X_A=$ $(round(X(10) * E(10) + X(30) * E(30), digits=2))
 "
 end
 
@@ -1290,6 +1293,7 @@ version = "3.5.0+0"
 # ╟─a2201ee9-234e-4a8f-888e-7a787c00764a
 # ╟─6e921fb0-ff81-4c02-b299-1f1698e1f554
 # ╠═a3f27213-e0e1-44aa-a0a9-b6458ab00630
+# ╟─01ca9577-f336-48ff-b514-ea1074b71e76
 # ╟─83be9497-4f5d-4018-9e6e-0366a0007ba4
 # ╟─f46e7b36-fb5e-48db-97c2-8b2b0ac4d254
 # ╟─534e5593-42ea-4377-ae6d-4de28f0af802
